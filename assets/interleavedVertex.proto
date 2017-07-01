@@ -1,0 +1,24 @@
+//
+//  interleavedVertex.proto
+//
+//  Created by Jingshu Huang on 9/13/12.
+//  Copyright (c) 2012 Storm8. All rights reserved.
+//
+
+option optimize_for = SPEED;           // Uncomment this line for iOS
+//option optimize_for = LITE_RUNTIME;  // Uncomment this line for android
+
+option java_package = "com.storm8.dolphin.motionLib.proto";
+option java_outer_classname = "InterleavedVertex";
+
+message InterleavedVertexPB {
+    required float x = 1 [default = 0];
+    required float y = 2 [default = 0];
+    required float z = 3 [default = 0];
+    optional float u = 4 [default = 0];
+    optional float v = 5 [default = 0];
+    optional int32 r = 6 [default = 255];
+    optional int32 g = 7 [default = 255];
+    optional int32 b = 8 [default = 255];
+    optional int32 a = 9 [default = 255];
+}

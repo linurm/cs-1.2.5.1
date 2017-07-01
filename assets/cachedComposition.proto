@@ -1,0 +1,48 @@
+//
+//  cachedComposition.proto
+//
+//  Created by Jingshu Huang on 9/13/12.
+//  Copyright (c) 2012 Storm8. All rights reserved.
+//
+
+import "cachedMotionFrame.proto";
+
+option optimize_for = SPEED;           // Uncomment this line for iOS
+//option optimize_for = LITE_RUNTIME;  // Uncomment this line for android
+
+option java_package = "com.storm8.dolphin.motionLib.proto";
+option java_outer_classname = "CachedCompositionPB";
+
+
+// Next field Id = 5
+// A message that stores the frame Ids used for interpolation when the current
+// key frame is needed but not available.
+message ReplacedKeyFrame {
+    // Key frame Id used to replace the current frame when the current frame is
+    // requested as the start frame for an interpolation.
+    required int32 prevFrameId = 1;
+    // Key frame Id used to replace the current frame when the current frame is
+    // requested as the end key frame for an interpolation.
+    required int32 nextFrameId = 2;
+
+    // Extended length when using |prevFrameId| to replace the current frame.
+    optional float addedLeftLen = 3;
+    // Extended length when using |nextFrameId| to replace the current frame.
+    optional float addedRightLen = 4;
+}
+
+// Next field Id = 6
+// Please increase this Id number when adding new fields to the proto buffer.
+message CachedComposition {
+    // numFrames may be different from the cachedFrames_size when the data is
+    // compressed.
+    required int32 numFrames = 1;
+    required int32 numLayers = 2;
+    repeated CachedMotionFrame cachedFrames = 3;
+    optional float frameRate = 4 [default = 24];
+
+    // A list of key frame Id pairs. Each Id is used for replacing the current
+    // key frame when the current frame is eliminated during data compression
+    // but requested at rendering.
+    repeated ReplacedKeyFrame replacements = 5;
+}

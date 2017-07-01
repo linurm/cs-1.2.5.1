@@ -1,0 +1,68 @@
+{
+    "settings": {
+        "viewClassName": "BottomContextMenuView"
+    },
+    "menus": {
+        "home-menu": [
+                      {
+                      "id": "menu",
+                      "image": "hud_button_menu.png",
+                      "action": "showMainMenu",
+                      "position": "left"
+                      },
+                      {
+                      "id": "edit",
+                      "image": "hud_button_move.png",
+                      "action": "editButtonTapped"
+                      },
+                      {
+                      "id": "market",
+                      "image": "hud_button_market.png",
+                      "action": "showCategory"
+                      }
+                      ],
+        "edit-menu": [
+                      {
+                      "id": "exit_edit",
+                      "image": "hud_button_done.png",
+                      "action": "exitMode"
+                      },
+                      {
+                      "id": "storage",
+                      "image": "hud_button_storage.png",
+                      "action": "showStorage",
+                      "position": "left"
+                      }
+                      ],
+		"expansion-menu": [
+                      {
+                      "id": "exit_expansion",
+                      "image": "hud_button_done.png",
+                      "action": "exitSelectExpansionMode"
+                      }
+                      ],
+        "visit-menu": [
+                       {
+                       "id": "gift",
+                       "image": "gifting_send_gift_button.png",
+                       "action": "giftingButtonTapped"
+                       },
+                       {
+                       "id": "wall",
+                       "image": "sign_post_comments.png",
+                       "action": "showProfileComments"
+                       },
+                       {
+                       "id": "social",
+                       "image": "header_social_button.png",
+                       "action": "socialButtonTapped"
+                       },
+                       {
+                       "id": "home",
+                       "image": "friend_home_button.png",
+                       "action": "gotoMyFarm"
+                       }
+                       ],
+        "empty-menu": []
+    }
+}

@@ -1,0 +1,337 @@
+/* 
+  Localizable.strings
+
+  Created by Stephen Hilber on 5/3/12.
+  Copyright (c) 2012 Storm8. All rights reserved.
+*/
+
+/*** Base Strings (SharedAppStrings.h) ***/
+
+"S_ERROR_INVITE_EMAIL_NOT_CONFIGURED" = "Please configure Email in your device, and try again.";
+"S_ERROR_INVITE_TEXT_OS_DOES_NOT_SUPPORT" = "Your device does not support Text Messaging.";
+"S_ERROR_INVITE_TEXT_DEVICE_DOES_NOT_SUPPORT" = "Text Messaging is not enabled in your device.";
+
+"S_ACHIEVEMENT" = "badge";
+"S_ACHIEVEMENTS" = "badges";
+
+"S_WELCOME_HOME" = "Welcome Home!";
+
+"S_EXPANSION_MSG" = "Expand for";
+"S_CASH" = "Cash";
+
+"S_BASE_EXP" = "EXP";
+"S_BASE_KARMA" = "Karma";
+"S_BASE_FOOD" = "Food";
+"S_BASE_MASTERY" = "Mastery";
+"S_BASE_MASTERY_PLURAL" = "Masteries";
+"S_BASE_ENERGY" = "Energy";
+"S_BASE_SKILL" = "Skill";
+
+// Gift related
+"S_GIFT_ALREADY_SENT" = "You have already sent a gift to %@ today. You can send them another gift tomorrow.";
+"S_GIFT_REACHED_DAILY_LIMIT" = "You\'ve reached the daily limit for sending gifts today. You can send more tomorrow.";
+"S_GIFT_SELECTED_TOO_MANY_FRIENDS" = "You can only send this item %d more times today.";
+"S_GIFT_SELECTED_NO_FRIENDS" = "You must select a friend first.";
+"S_GIFT_FIRST_MSG" = "Sent you";
+"S_GIFT_FIRST_MSG_USE" = "It is now in";
+"S_GIFT_SECOND_MSG" = "Edit Tool / Inventory.";
+
+// Construction parts related
+"S_PART_SENT_SUCCESS" = "You have sent the material to your friend.";
+
+// Fertilize factory cell labels.
+"S_FERTILIZE_FINISH_THIS_CONTRACT" = "Process this item";
+"S_FERTILIZE_FINISH_ALL_CONTRACTS" = "Process %d items";
+"S_FERTILIZE_CANCEL_THIS_CONTRACT" = "Cancel this item and start a new one?";
+"S_FERTILIZE_RECOVER_THIS_CONTRACT" = "Recover this item";
+"S_FERTILIZE_RECOVER_ALL_CONTRACTS" = "Recover %d items";
+"S_FERTILIZE_CLEAR_THIS_CONTRACT" = "Discard this item";
+
+// Receive or send items to friends
+"S_RECIPIENTS_HEADER_REQUEST1" = "You need %@.";
+"S_RECIPIENTS_HEADER_REQUEST2" = "Ask your friends!";
+"S_RECIPIENTS_HEADER_SEND1" = "Send %";
+"S_RECIPIENTS_HEADER_SEND2" = "to your friends!";
+
+// Market items allowed for purchase when in home board
+"S_ONLY_ALLOWED_IN_HOME" = "You can buy this type of item only when you are in home area.";
+
+// Wall comment related
+"S_NEED_VALID_WALL_COMMENT" = "Comments can only be a single line.";
+
+// Block Expansion
+"S_ERRORL_EXPANSON_MIN_LEVE" = "You need to be at level %d to unlock next expansion.";
+"S_EXPANSION_COMPLETED" = "Your expansion has been completed!";
+"S_EXPANSION_REWARD" = "Expand here to claim your reward!";
+
+// Unlock items
+"S_UNLOCK_NEW_ITEMS" = "Unlock %d New Items";
+
+// Quests/Tutorial
+"S_GUIDE" = "guide";
+"S_QUEST" = "Goal";
+"S_QUEST_MENU_HEADER" = "%d Goals";
+
+// Mastery sets
+"S_MASTERY_SET_COMPLETED_HEADER" = "Set Completed";
+"S_MASTERY_SET_COMPLETED" = "Congrats! You've completed %@. You can find the prize in your storage.";
+"S_MASTERY_SET_FIRST_PARTIAL" = "Good job! You're on your way to earning an amazing new animal for your zoo!";
+"S_MASTERY_SET_SECOND_PARTIAL" = "Wonderful! You're one family away from earning a new animal for your zoo!";
+
+// Building upgrade
+"S_BUILDING_UPGRADE_LIMIT" = "You can upgrade only 1 building at a time. %1$@ will be completed in %2$@.";
+"S_BUILDING_UPGRADE_DISALLOWED" = "You cannot upgrade this building at this time.";
+
+"S_UPGRADE_DISALLOWED_CONTRACT" = "You cannot upgrade at this time.";
+
+// Pack purchase
+"S_PACK_PURCHASE_WITH_ITEMS" = "Congratulations! you have purchased the pack and the above item(s) are placed in the storage";
+"S_PACK_PURCHASE_WITHOUT_ITEMS" = "Congratulations! you have purchased the pack";
+"S_PACK_INFO_VIEW_MESSAGE" = "Buying the %@ gives the following items!";
+
+"S_ERROR_LAST_DOOR_CANNOT_BE_SOLD" = "You must have at least one door to your boutique.";
+
+"S_REFILL_ENERGY_ASK_FRIENDS" = "Ask for Energy Packs";
+"S_REFILL_ENERGY_REQUEST_SENT" = "Request sent!";
+"S_REFILL_ENERGY_FULL" = "Your Energy is full!";
+
+"S_ENERGY_FULL" = "Your energy is full.";
+"S_BOUGHT_ITEM_SUCCESS" = "You received %@.";
+"S_ITEM_NOT_USABLE" = "You cannot use this item in this view!";
+"S_POWERUP_FAIL" = "Failed to apply this Power Up.";
+
+"S_NOT_ENOUGH_ITEMS" = "You're short of %@.";
+
+"S_TUTORIAL_CHANGE_USER_NAME_TEXT" = "";
+
+// Old TeamLava Strings
+"S_BASE_CRATE_INFO_VIEW_MESSAGE" = "Opening the %@ gives you a chance to obtain items you can't find anywhere else!";
+"S_BASE_SETUP_TILE" = "Tap on a messy or busy factory to clean it.";
+"S_BASE_FERTILIZE_ALL_MESSAGE" = "All your crops are revived!";
+"S_BASE_FERTILIZE_NOTHING_TO_REVITALIZE" = "You do not have any crops to revive.";
+"S_BASE_GATHER_SUCCESS_MESSAGE" = "You have collected all bonuses from toured places!";
+"S_BASE_GATHER_ERROR_MESSAGE" = "You do not have any more toured places to collect bonus from.";
+"S_BASE_CANCEL_CONTRACT_IDENTICAL_ERROR" = "The new crop is the same as the existing one.";
+"S_BASE_ITEM_MASTERY_MORE_COINS" = "+%1$d%% more coins when collecting %2$@";
+"S_BASE_ERROR_WITHERED_ITEM_CANNOT_BE_WATERED" = "The %@ cannot be toured.";
+"S_BASE_ANIMAL_ATTRACTION_INSTRUCTION" = "To build more animal exhibits, you need to build more service buildings.";
+
+// Item Strings
+"S_BASE_ITEM_READY_TO_HARVEST" = "Ready to Harvest";
+"S_BASE_ITEM_WITHERED" = "Withered";
+"S_BASE_ITEM_UNDER_CONSTRUCTION" = "Under construction";
+"S_BASE_ITEM_IS_DECORATION" = "Decoration";
+"S_BASE_ITEM_NUM_TO_SERVE" = "You have %1$d %2$@ to serve.";
+"S_BASE_ITEM_PERCENT_DONE" = "%@ (%.2f%% done)";
+"S_BASE_ITEM_STAGE" = "Stage %d";
+"S_BASE_ITEM_STAGE_PARENTHESES" = "%@ (Stage %d)";
+
+// Level up strings
+"S_BASE_LEVEL" = "Level %d";
+"S_BASE_LEVEL_REQUIRED" = "(Level %d Required)";
+"S_BASE_LEVEL_UP_UNLOCKED_AREA" = "and unlocked new Areas in Map!";
+"S_BASE_LEVEL_UP_UNLOCKED_ITEM" = "and unlocked new Items in Market!";
+"S_BASE_LEVEL_UP_UNLOCKED_AREA_AND_ITEM" = "and unlocked new Areas and Items!";
+"S_BASE_LEVEL_UP_NO_UNLOCK" = "Keep up your good work!";
+
+// Number labels
+"S_BASE_LABEL_QUANTITY" = "x%d";
+"S_BASE_LABEL_INCOME" = "+%qi";
+"S_BASE_LABEL_PLUS_INT" = "+%d";
+"S_BASE_LABEL_PLUS_OBJ" = "+%@";
+"S_BASE_LABEL_PLUS_MAX" = "+%d Max";
+"S_BASE_LABEL_PLUS_CASH" = "+%@ Cash";
+"S_BASE_LABEL_PLUS_ENERGY" = "+%d Energy";
+"S_BASE_LABEL_GEMS" = "+%1$d %2$@";
+"S_BASE_LABEL_STATUS" = "(%@/%@)";
+"S_BASE_LABEL_COST" = "%d / %d";
+"S_BASE_LABEL_XP" = "%dXP";
+"S_BASE_LABEL_XP_UP" = "+%d XP";
+"S_BASE_LABEL_XP_OBJ" = "%@ XP";
+"S_BASE_LABEL_XP_OBJ_PLUS" = "+%@ XP";
+"S_BASE_LABEL_MILLIONS" = "%0.0fM";
+"S_BASE_LABEL_THOUSANDS" = "%0.0fK";
+"S_BASE_BIL" = " bil";
+"S_BASE_MIL" = " mil";
+"S_BASE_BIL_LONG" = "%.1f bil";
+"S_BASE_MIL_LONG" = "%.1f mil";
+"S_BASE_THOUSAND_LONG" = "%.1f K";
+"S_BASE_NUMBER_LONG" = "%lld";
+"S_BASE_DONT_HAVE_ENOUGH" = "You don't have enough %@.";
+
+// Tap on object
+"S_BASE_TAP_RESIDENCE" = "Tap on Residence";
+"S_BASE_TAP_BUSINESS" = "Tap on Business";
+"S_BASE_TAP_ANIMALS" = "Tap on Animals";
+"S_BASE_TAP_CROPS" = "Tap on Crops";
+"S_BASE_TAP_HABITAT" = "Tap on Habitat";
+"S_BASE_TAP_IT" = "Tap on it";
+"S_BASE_ROTATE_ITEMS" = "Rotate Items";
+"S_BASE_DRAG_TO_MOVE" = "Drag items to move them";
+"S_BASE_TAP_TO_SELL" = "Tap on items to sell them";
+"S_BASE_TAP_TO_COLLECT" = "Tap on items to collect them";
+"S_BASE_CANNOT_ROTATE" = "This item can't be rotated here.  Try moving it first.";
+"S_BASE_TAP_ON_EMPTY_TO_PLACE" = "Tap on empty land to place";
+"S_BASE_TAP_ON_EMPTY_TO_PLACE_LONG" = "Tap on an empty space to place this item";
+"S_BASE_MOVE_OR_ROTATE" = "Move/Rotate";
+
+// Friends and Neighbors
+"S_BASE_ASK_FRIENDS" = "Ask Friends";
+"S_BASE_NEIGHBOR_NEEDED" = "(%d more neighbor needed)";
+"S_BASE_NEIGHBORS_NEEDED" = "(%d more neighbors needed)";
+"S_BASE_NEIGHBORS" = "%d neighbors";
+"S_BASE_NEIGHBORS_OBJ" = "%@ Neighbors";
+"S_BASE_NEIGHBORS_REQUIRED" = "%d neighbors required";
+"S_BASE_NEIGHBOR_WELCOME" = "Welcome to %@!";
+"S_BASE_NO_MESSAGES" = "No one has written any messages yet.";
+"S_BASE_NO_NEWS" = "No news yet.";
+"S_BASE_OBJ_OWNS_WALL" = "%@'s Wall";
+
+// Emails and texts
+"S_BASE_CANNOT_SEND_EMAIL" = "We are unable to send the email. Please try again later.";
+"S_BASE_EMAIL_SENT" = "The email has been sent.";
+"S_BASE_CANNOT_SEND_TEXT" = "We are unable to send the text message. Please try again later.";
+"S_BASE_TEXT_SENT" = "The text message has been sent.";
+
+// Dimensions and Time
+"S_BASE_ONE_BY_ONE" = "%dx%d";
+"S_BASE_ONE_BY_TWO" = "%dx%d_%d";
+"S_BASE_TWO_BY_ONE" = "%d_%dx%d";
+"S_BASE_TWO_BY_TWO" = "%d_%dx%d_%d";
+"S_BASE_OBJ_BY_OBJ" = "%@x%@";
+"S_BASE_TIME_LEFT" = "%1$d %2$@ left";
+"S_BASE_S" = "s";
+"S_BASE_SEC" = "sec";
+"S_BASE_SECS" = "secs";
+"S_BASE_M" = "m";
+"S_BASE_MIN" = "min";
+"S_BASE_MINS" = "mins";
+"S_BASE_H" = "h";
+"S_BASE_HOUR" = "hour";
+"S_BASE_HOURS" = "hours";
+"S_BASE_D" = "d";
+"S_BASE_DAY" = "day";
+"S_BASE_DAYS" = "days";
+"S_BASE_HOURS_MINS_SECS" = "%.2d:%.2d:%.2d";
+"S_BASE_A_SECOND_AGO" = "a second ago";
+"S_BASE_ONE_SECOND_AGO" = "%qi second ago";
+"S_BASE_ONE_MINUTE_AGO" = "%qi minute ago";
+"S_BASE_ONE_HOUR_AGO" = "%qi hour ago";
+"S_BASE_ONE_DAY_AGO" = "%qi day ago";
+"S_BASE_SOME_SECONDS_AGO" = "%qi seconds ago";
+"S_BASE_SOME_MINUTES_AGO" = "%qi minutes ago";
+"S_BASE_SOME_HOURS_AGO" = "%qi hours ago";
+"S_BASE_SOME_DAYS_AGO" = "%qi days ago";
+"S_BASE_DAYS_LEFT" = "%d days left";
+"S_BASE_DAY_LEFT" = "%d day left";
+"S_BASE_HOURS_LEFT" = "%d hrs left";
+"S_BASE_HOURS_AND_MIN_LEFT" = "%1$d hrs %2$d min left";
+"S_BASE_HOURS_AND_MINS_LEFT" = "%1$d hrs %2$d mins left";
+"S_BASE_HOUR_LEFT" = "%d hr left";
+"S_BASE_HOUR_AND_MIN_LEFT" = "%1$d hr %2$d min left";
+"S_BASE_HOUR_AND_MINS_LEFT" = "%1$d hr %2$d mins left";
+"S_BASE_MINS_LEFT" = "%d mins left";
+"S_BASE_MINS_AND_SEC_LEFT" = "%1$d mins %2$d sec left";
+"S_BASE_MINS_AND_SECS_LEFT" = "%1$d mins %2$d secs left";
+"S_BASE_MIN_LEFT" = "%d min left";
+"S_BASE_MIN_AND_SEC_LEFT" = "%1$d min %2$d sec left";
+"S_BASE_MIN_AND_SECS_LEFT" = "%1$d min %2$d secs left";
+"S_BASE_SECS_LEFT" = "%d secs left";
+"S_BASE_SEC_LEFT" = "%d sec left";
+"S_BASE_DAYS_AND_HOURS" = "%1$dd %2$dh";
+"S_BASE_HOURS_AND_MINUTES" = "%1$dh %2$dm";
+"S_BASE_MINUTES_AND_SECONDS" = "%1$dm %2$ds";
+"S_BASE_SECONDS_ONLY" = "%ds";
+"S_BASE_RECTANGLE" = "(%f, %f, %f, %f)";
+"S_BASE_VALUE_PACK_TIMER_LABEL" = "Time Left: %@";
+
+// Achievements and Ranks
+"S_BASE_ACHIEVEMENT_UNLOCKED_BY_X" = "You earned the %@ %@ %@ by %@!";
+"S_BASE_EARN_NEXT" = "%@ to earn your next %@.";
+"S_BASE_EARNED" = "You've Earned";
+"S_BASE_EARNED_BADGE" = "Congrats! You've earned the %@ badge!";
+"S_BASE_OBJECTS_NEEDED" = "(%1$d more %2$@ needed)";
+"S_BASE_RANK_INT" = "Rank %1$d of %2$d.";
+"S_BASE_RANK_OBJ" = "Rank %1$d of %2$@.";
+
+// Fertilizing and Crates
+"S_BASE_NOTHING_TO_FERTILIZE" = "You do not have anything to fertilize.";
+"S_BASE_ALL_ANIMALS_GATHERED" = "All of your animals and trees have been gathered!";
+"S_BASE_NO_ANIMALS_TO_GATHER" = "You do not have any animals and trees to gather.";
+"S_BASE_DISCOVERY_CHEST" = "Discovery Chest";
+
+// Photos and Facebook
+"S_BASE_NEED_PHOTO_PERMISSSIONS" = "You need to enable photo permissions for this application.";
+"S_BASE_PHOTO_SAVED" = "Your photo has been saved!";
+"S_BASE_FACEBOOK_ERROR_LOGIN" = "There was an error logging in to Facebook.";
+"S_BASE_FACEBOOK_ERROR_CONTACT" = "There was an error contacting Facebook.";
+"S_BASE_FACEBOOK_PHOTO_POSTED" = "Your photo has been posted to Facebook!";
+
+// Selling & Storage
+"S_BASE_COINS" = "Coins";
+"S_BASE_COLLECT_MORE" = "Collect More!";
+"S_BASE_PERMITS" = "Permits";
+"S_BASE_SELL_FOR" = "Sell %@ for:";
+"S_BASE_SELL_ITEMS" = "Sell Items";
+"S_BASE_BOARD_EXPAND" = "Expand to %dx%d!";
+"S_BASE_CONFIRM_SELL" = "Are you sure you want to sell this item for %1$@ %2$@?";
+"S_BASE_NONE_IN_STORAGE" = "You do not have any %@ in your storage.";
+"S_BASE_NONE_IN_INVENTORY" = "You have no more in your inventory.";
+"S_BASE_MATERIAL_USED_FOR_BUILDING" = "This material is used to complete constructible items.";
+"S_BASE_AVAILABLE_AT_LEVEL" = "will become available when you reach level %d.";
+"S_BASE_UNLOCK_NOW_FOR_GEMS" = "Do you want to unlock it now for %d";
+"S_BASE_BUY_ALL_FOR" = "Buy All For       %d";
+
+// Value Pack
+"S_XIB_VALUE_PACK" = "VALUE PACK";
+"S_XIB_LIMITED_TIME" = "Limited Time!";
+"S_XIB_BUTTON_BUY_NOW" = "Buy Now";
+"S_XIB_DIALOG_SALE_TAG_LABEL_OFF" = "OFF";
+"S_XIB_DIALOG_SALE_FORTY_PERCENT_OFF" = "40%";
+"S_XIB_VALUE_PACK_SUBTITLE" = "A special bundle for starting players!";
+"S_XIB_DIALOG_SALE" = "SALE";
+
+//Settings
+"S_BASE_MUSIC_ON" = "On";
+"S_BASE_MUSIC_OFF" = "Off";
+"S_BASE_SOUNDS_ON" = "On";
+"S_BASE_SOUNDS_OFF" = "Off";
+"S_BASE_FACEBOOK_CONNECTED" = "Connected";
+"S_BASE_FACEBOOK_NOT_CONNECTED" = "Not Connected";
+
+"S_BASE_VALUE_PACK_LOOT_ITEMS" = "May Contain:";
+"S_BASE_VALUE_PACK_EXTRA_ITEMS" = "Contains:";
+
+"S_BASE_MORE_FREE_GAMES" = "More FREE Games!";
+"S_BASE_MESSAGE_SURVEY_CANNOT_SUBMIT" = "Please fill all required fields to submit, or close dialog to cancel";
+"S_BASE_MESSAGE_SURVEY_SUCCESS_SUBMIT" = "Thanks for Your Response!";
+
+// Miscellaneous
+"S_BASE_SUPPORT_ID" = "Support ID: %@";
+"S_BASE_INT_QUESTION" = "%d?";
+"S_BASE_NO_NAME" = "No Name";
+"S_BASE_EDIT" = "Edit";
+"S_BASE_DONE" = "Done";
+"S_BASE_PAGE_X" = "Page %1$d / %2$d";
+"S_BASE_LOADING" = "Loading...";
+"S_BASE_MAX" = "Max";
+"S_BASE_OBJ_EXCLAMATION" = "%@!";
+"S_BASE_PIECE" = "Piece";
+"S_BASE_PIECES" = "Pieces";
+"S_BASE_PLATE" = "Plate";
+"S_BASE_PLATES" = "Plates";
+"S_BASE_TODAY" = "today";
+"S_BASE_FPS" = "%.2f fps / %@mbu / %@mbf";
+"S_BASE_MESSAGES_CAPS" = "MESSAGES";
+"S_BASE_QUEST_REWARD" = "Reward:";
+"S_BASE_UNDER_CONSTRUCTION" = "Under Construction";
+"S_BASE_YOU_HAVE_X_MESSAGES" = "You have %d messages.";
+"S_BASE_ERROR_LIST_DOES_NOT_EXIST" = "ERROR: List does not exist on server.";
+"S_BASE_PLAY" = "Play";
+"S_BASE_CURRENCY_SEPARATOR" = ",";
+"S_BASE_CURRENCY_DECIMAL_SEPARATOR" = ".";
+
+"S_BASE_OFFLINE_ERROR_MESSAGE" = "Please connect to the internet to use this feature.";
+"S_BASE_OFFLINE_ERROR_TITLE" = "An error occurred";
+
+"S_BASE_BLOCKED_USER_LIST_HEADER" = "%d players are blocked from posting messages on your Wall.";

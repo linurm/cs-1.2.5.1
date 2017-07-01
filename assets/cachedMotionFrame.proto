@@ -1,0 +1,81 @@
+//
+//  cachedMotionFrame.proto
+//
+//  Created by Jingshu Huang on 9/13/12.
+//  Copyright (c) 2012 Storm8. All rights reserved.
+//
+
+import "interleavedVertex.proto";
+
+option optimize_for = SPEED;           // Uncomment this line for iOS
+//option optimize_for = LITE_RUNTIME;  // Uncomment this line for android
+
+option java_package = "com.storm8.dolphin.motionLib.proto";
+option java_outer_classname = "CachedMotionFramePB";
+
+message VectorPB {
+  required float x = 1 [default = 0];
+  optional float y = 2 [default = 0];
+  optional float z = 3 [default = 0];
+}
+
+// Next field Id = 5
+// Please update this number when adding a new field to the protobuf.
+message MetaInfoPB {
+    // Center of the all the vertices in this frame.
+	required VectorPB center = 1;
+	// Radius of the bounding sphere for all the vertices.
+	required float radius = 2 [default = 0];
+	// Bounding box for all the vertices.
+	required VectorPB boundMin = 3;
+	required VectorPB boundMax = 4;
+}
+
+message DiscardSegment {
+    required int32 start = 1 [default = 0];
+    required int32 size = 2 [default = 0];
+}
+
+message EffectInfo {
+    required float posX = 1 [default = 0];
+    required float posY = 2 [default = 0];
+    optional float posZ = 3 [default = 0];
+    optional float rotation = 4 [default = 0];
+    optional float alphaMultiplier = 5 [default = 1];
+
+    // Effect layers
+    enum LayerEffectType {
+        kInvalidEffectLayer = 0;
+        kParticleEffectLayer = 1;
+        kSoundEffectLayer = 2;
+    }
+
+    optional LayerEffectType layerEffectType = 6 [default = kInvalidEffectLayer];
+}
+
+// Next field Id = 10
+// Please update this number when adding a new field to the protobuf.
+message CachedMotionFrame {
+    // Number of vertices in this frame. This is actually a duplicate of
+    // vertices_size().
+    required int32 count = 1 [default = 0];
+    // Vertices of the objects in this frame.
+    repeated InterleavedVertexPB vertices = 2;
+    // Flag that indicates if the frame shall be interpolated with the next one.
+    repeated int32 vtTweened = 3;
+    // Vertices for degenerated quads.
+    repeated DiscardSegment discardPile = 4;
+    // List of indices of face vertices.
+    repeated int32 indices = 7;
+    // If the uv should be interpolated with the next key frame.
+    optional bool flagInterpolateUV = 8;
+
+	// Meta info of the frame.
+	optional MetaInfoPB metaInfo = 9;
+
+    // Sorted list of effect layer info and file names. Sorted by the distance
+    // of the layer from the eye, from farest to the nearest.
+    repeated EffectInfo effectInfo = 5;
+    // List of effect file names.
+    repeated string effectFileNames = 6;
+}

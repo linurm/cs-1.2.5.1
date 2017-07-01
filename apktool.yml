@@ -1,0 +1,29 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.teamlava.castlestory1.2.5.1g.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '17'
+sharedLibrary: false
+unknownFiles:
+  ATTRIBUTION.txt: '8'
+  .readme: '8'
+  com.apportable.system/icu/icu.dat: '8'
+  com.apportable.system/fonts/DroidNaskh-Regular-SystemUI.ttf: '8'
+  com.apportable.system/fonts/DroidSansHebrew-Regular.ttf: '8'
+  com.apportable.system/fonts/DroidSansHebrew-Bold.ttf: '8'
+  com.apportable.system/fonts/DroidSansThai.ttf: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.2.1
+versionInfo:
+  versionCode: '1419291075'
+  versionName: 1.2.5.1g
