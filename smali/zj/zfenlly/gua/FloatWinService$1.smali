@@ -24,7 +24,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 64
+    .line 67
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$1;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -39,19 +39,19 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 67
+    .line 70
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 68
+    .line 71
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 78
+    .line 81
     :goto_0
     return-void
 
-    .line 70
+    .line 73
     :pswitch_0
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$1;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
@@ -60,13 +60,13 @@
 
     move-result-object v0
 
-    const-string v1, "START"
+    const-string v1, "s"
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 73
+    .line 76
     :pswitch_1
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$1;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
@@ -75,13 +75,13 @@
 
     move-result-object v0
 
-    const-string v1, "STOP"
+    const-string v1, "t"
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 68
+    .line 71
     nop
 
     :pswitch_data_0

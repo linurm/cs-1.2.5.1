@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lzj/zfenlly/gua/FloatWinService;->createView2(Landroid/content/Context;)V
+    value = Lzj/zfenlly/gua/FloatWinService;->createView(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 253
+    .line 239
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,9 +42,7 @@
     .param p1, "var1"    # Landroid/view/View;
 
     .prologue
-    const/4 v2, 0x0
-
-    .line 256
+    .line 242
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->floatView:Lzj/zfenlly/gua/FloatView;
@@ -58,84 +56,86 @@
 
     if-eqz v0, :cond_0
 
-    .line 257
+    .line 243
     const-string v0, "click"
 
     const-string v1, "click"
 
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 258
+    .line 245
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    # getter for: Lzj/zfenlly/gua/FloatWinService;->floatView:Lzj/zfenlly/gua/FloatView;
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$100(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/FloatView;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v2}, Lzj/zfenlly/gua/FloatView;->setbClickable(Z)V
-
-    .line 259
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    # getter for: Lzj/zfenlly/gua/FloatWinService;->mWifiAdmin:Lzj/zfenlly/wifi/WifiAdmin;
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$200(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/wifi/WifiAdmin;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lzj/zfenlly/wifi/WifiAdmin;->isWifiEnabled()Z
+    # getter for: Lzj/zfenlly/gua/FloatWinService;->isOnExpandView:Z
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$200(Lzj/zfenlly/gua/FloatWinService;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-nez v0, :cond_1
 
-    .line 260
+    .line 246
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    # getter for: Lzj/zfenlly/gua/FloatWinService;->mWifiAdmin:Lzj/zfenlly/wifi/WifiAdmin;
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$200(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/wifi/WifiAdmin;
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->addExpandView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$300(Lzj/zfenlly/gua/FloatWinService;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lzj/zfenlly/wifi/WifiAdmin;->closeWifi()V
-
-    .line 261
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    const-string v1, "close wifi"
-
-    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
-
-    .line 267
+    .line 257
     :cond_0
     :goto_0
     return-void
 
-    .line 263
+    .line 248
     :cond_1
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    # getter for: Lzj/zfenlly/gua/FloatWinService;->mWifiAdmin:Lzj/zfenlly/wifi/WifiAdmin;
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$200(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/wifi/WifiAdmin;
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->delExpandView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$400(Lzj/zfenlly/gua/FloatWinService;)V
 
-    move-result-object v0
-
-    invoke-virtual {v0}, Lzj/zfenlly/wifi/WifiAdmin;->openWifi()Z
-
-    .line 264
+    .line 249
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    const-string v1, "open wifi"
+    # getter for: Lzj/zfenlly/gua/FloatWinService;->settings_flag:Z
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$500(Lzj/zfenlly/gua/FloatWinService;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 250
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->delSettingsView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$600(Lzj/zfenlly/gua/FloatWinService;)V
+
+    .line 251
+    :cond_2
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # getter for: Lzj/zfenlly/gua/FloatWinService;->add_flag:Z
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$700(Lzj/zfenlly/gua/FloatWinService;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 252
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    const-string v1, "[ - ]"
+
+    const/4 v2, 0x0
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 253
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$2;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->delCView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$800(Lzj/zfenlly/gua/FloatWinService;)V
 
     goto :goto_0
 .end method

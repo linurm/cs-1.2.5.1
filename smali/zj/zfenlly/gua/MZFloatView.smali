@@ -77,13 +77,6 @@
 
     invoke-interface {v1, v2, v3}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 28
-    const-string v1, "TAG"
-
-    const-string v2, "UPDATE location"
-
-    invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
-
     .line 29
     const/4 v1, 0x2
 

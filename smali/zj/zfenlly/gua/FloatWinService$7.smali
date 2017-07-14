@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lzj/zfenlly/gua/FloatWinService;->createView2(Landroid/content/Context;)V
+    value = Lzj/zfenlly/gua/FloatWinService;->addExpandView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 336
+    .line 377
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,17 +42,22 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 339
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setTimeAfter10Minites()V
-
-    .line 340
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    const-string v1, "+10m"
-
     const/4 v2, 0x0
+
+    .line 381
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # getter for: Lzj/zfenlly/gua/FloatWinService;->add_flag:Z
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$700(Lzj/zfenlly/gua/FloatWinService;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 382
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    const-string v1, "[ - ]"
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -60,6 +65,33 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 341
+    .line 383
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->delCView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$800(Lzj/zfenlly/gua/FloatWinService;)V
+
+    .line 388
+    :goto_0
     return-void
+
+    .line 385
+    :cond_0
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    const-string v1, "[ + ]"
+
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 386
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->addCView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$1100(Lzj/zfenlly/gua/FloatWinService;)V
+
+    goto :goto_0
 .end method

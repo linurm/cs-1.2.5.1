@@ -10,6 +10,8 @@
 
 .field public static button_shape:I
 
+.field public static green:I
+
 .field public static mz:I
 
 .field public static nfcsuccess:I
@@ -65,6 +67,11 @@
     const v0, 0x7f0a0001
 
     sput v0, Lzj/zfenlly/gua/Rfile;->nfcsuccess:I
+
+    .line 18
+    const v0, 0x7f060023
+
+    sput v0, Lzj/zfenlly/gua/Rfile;->green:I
 
     return-void
 .end method

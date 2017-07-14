@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lzj/zfenlly/gua/FloatWinService;->createView2(Landroid/content/Context;)V
+    value = Lzj/zfenlly/gua/FloatWinService;->addExpandView()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 386
+    .line 412
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,17 +42,28 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 389
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setRefresh()V
-
-    .line 390
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
-
-    const-string v1, "refresh"
-
     const/4 v2, 0x0
+
+    .line 415
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # getter for: Lzj/zfenlly/gua/FloatWinService;->add_flag:Z
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$700(Lzj/zfenlly/gua/FloatWinService;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 416
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # setter for: Lzj/zfenlly/gua/FloatWinService;->add_flag:Z
+    invoke-static {v0, v2}, Lzj/zfenlly/gua/FloatWinService;->access$702(Lzj/zfenlly/gua/FloatWinService;Z)Z
+
+    .line 417
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    const-string v1, "start"
 
     invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
@@ -60,6 +71,21 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 391
+    .line 418
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->delCView()V
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$800(Lzj/zfenlly/gua/FloatWinService;)V
+
+    .line 420
+    :cond_0
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$9;->this$0:Lzj/zfenlly/gua/FloatWinService;
+
+    const/16 v1, 0x12
+
+    # invokes: Lzj/zfenlly/gua/FloatWinService;->StartClick(I)V
+    invoke-static {v0, v1}, Lzj/zfenlly/gua/FloatWinService;->access$1200(Lzj/zfenlly/gua/FloatWinService;I)V
+
+    .line 421
     return-void
 .end method

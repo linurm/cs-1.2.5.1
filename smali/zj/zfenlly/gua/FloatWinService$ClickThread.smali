@@ -36,26 +36,26 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 657
+    .line 749
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 660
+    .line 752
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->getTimes()I
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$1900(Lzj/zfenlly/gua/FloatWinService;)I
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$2100(Lzj/zfenlly/gua/FloatWinService;)I
 
     move-result v0
 
     iput v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->times:I
 
-    .line 661
+    .line 753
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->getInterval()I
-    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$2000(Lzj/zfenlly/gua/FloatWinService;)I
+    invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$2200(Lzj/zfenlly/gua/FloatWinService;)I
 
     move-result v0
 
@@ -63,14 +63,14 @@
 
     iput v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->interval:I
 
-    .line 662
+    .line 754
     new-instance v0, Landroid/app/Instrumentation;
 
     invoke-direct {v0}, Landroid/app/Instrumentation;-><init>()V
 
     iput-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->mInst:Landroid/app/Instrumentation;
 
-    .line 665
+    .line 757
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
@@ -92,10 +92,10 @@
 
     const/4 v11, 0x0
 
-    .line 676
+    .line 772
     iput-boolean v12, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
 
-    .line 677
+    .line 773
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     iget-object v0, v0, Lzj/zfenlly/gua/FloatWinService;->mHandler:Landroid/os/Handler;
@@ -110,7 +110,7 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 679
+    .line 775
     :cond_0
     iget v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->times:I
 
@@ -124,7 +124,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 682
+    .line 778
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
@@ -132,14 +132,14 @@
 
     iput-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->downTime:J
 
-    .line 683
+    .line 779
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->eventTime:J
 
-    .line 684
+    .line 780
     iget-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->downTime:J
 
     iget-wide v2, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->eventTime:J
@@ -149,7 +149,7 @@
     iget-object v5, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v5}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v5}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v5
 
@@ -160,7 +160,7 @@
     iget-object v6, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v6}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v6}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v6
 
@@ -174,7 +174,7 @@
 
     move-result-object v9
 
-    .line 685
+    .line 781
     .local v9, "me1":Landroid/view/MotionEvent;
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->mInst:Landroid/app/Instrumentation;
 
@@ -182,12 +182,12 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 688
+    .line 784
     .end local v9    # "me1":Landroid/view/MotionEvent;
     :goto_0
     monitor-enter p0
 
-    .line 690
+    .line 786
     const-wide/16 v0, 0xc8
 
     :try_start_1
@@ -196,31 +196,31 @@
     .catch Ljava/lang/InterruptedException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 695
+    .line 791
     :goto_1
     :try_start_2
     monitor-exit p0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 696
+    .line 792
     iget-boolean v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
 
     if-nez v0, :cond_2
 
-    .line 716
+    .line 812
     :cond_1
     :goto_2
     iput-boolean v11, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
 
-    .line 717
+    .line 813
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     iget-object v0, v0, Lzj/zfenlly/gua/FloatWinService;->ns:Lzj/zfenlly/gua/NotifySound;
 
     invoke-static {v13}, Lzj/zfenlly/gua/NotifySound;->play(I)V
 
-    .line 718
+    .line 814
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     iget-object v0, v0, Lzj/zfenlly/gua/FloatWinService;->mHandler:Landroid/os/Handler;
@@ -235,21 +235,21 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 720
+    .line 816
     return-void
 
-    .line 691
+    .line 787
     :catch_0
     move-exception v8
 
-    .line 693
+    .line 789
     .local v8, "e":Ljava/lang/InterruptedException;
     :try_start_3
     invoke-virtual {v8}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 695
+    .line 791
     .end local v8    # "e":Ljava/lang/InterruptedException;
     :catchall_0
     move-exception v0
@@ -260,7 +260,7 @@
 
     throw v0
 
-    .line 698
+    .line 794
     :cond_2
     :try_start_4
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -269,14 +269,14 @@
 
     iput-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->downTime:J
 
-    .line 699
+    .line 795
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->eventTime:J
 
-    .line 700
+    .line 796
     iget-wide v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->downTime:J
 
     iget-wide v2, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->eventTime:J
@@ -286,7 +286,7 @@
     iget-object v5, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v5}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v5}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v5
 
@@ -297,7 +297,7 @@
     iget-object v6, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v6}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v6}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v6
 
@@ -311,13 +311,13 @@
 
     move-result-object v10
 
-    .line 701
+    .line 797
     .local v10, "me2":Landroid/view/MotionEvent;
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->mInst:Landroid/app/Instrumentation;
 
     invoke-virtual {v0, v10}, Landroid/app/Instrumentation;->sendPointerSync(Landroid/view/MotionEvent;)V
 
-    .line 702
+    .line 798
     const-string v0, "instrument"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -333,7 +333,7 @@
     iget-object v2, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v2}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v2}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v2
 
@@ -352,7 +352,7 @@
     iget-object v2, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->CoordinateView:Lzj/zfenlly/gua/MZFloatView;
-    invoke-static {v2}, Lzj/zfenlly/gua/FloatWinService;->access$900(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
+    invoke-static {v2}, Lzj/zfenlly/gua/FloatWinService;->access$2300(Lzj/zfenlly/gua/FloatWinService;)Lzj/zfenlly/gua/MZFloatView;
 
     move-result-object v2
 
@@ -370,12 +370,12 @@
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 706
+    .line 802
     .end local v10    # "me2":Landroid/view/MotionEvent;
     :goto_3
     monitor-enter p0
 
-    .line 708
+    .line 804
     :try_start_5
     iget v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->interval:I
 
@@ -386,43 +386,43 @@
     .catch Ljava/lang/InterruptedException; {:try_start_5 .. :try_end_5} :catch_2
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 713
+    .line 809
     :goto_4
     :try_start_6
     monitor-exit p0
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 714
+    .line 810
     iget-boolean v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
 
     if-nez v0, :cond_0
 
     goto/16 :goto_2
 
-    .line 703
+    .line 799
     :catch_1
     move-exception v8
 
-    .line 704
+    .line 800
     .local v8, "e":Ljava/lang/Exception;
     invoke-virtual {v8}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_3
 
-    .line 709
+    .line 805
     .end local v8    # "e":Ljava/lang/Exception;
     :catch_2
     move-exception v8
 
-    .line 711
+    .line 807
     .local v8, "e":Ljava/lang/InterruptedException;
     :try_start_7
     invoke-virtual {v8}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto :goto_4
 
-    .line 713
+    .line 809
     .end local v8    # "e":Ljava/lang/InterruptedException;
     :catchall_1
     move-exception v0
@@ -433,33 +433,45 @@
 
     throw v0
 
-    .line 686
+    .line 782
     :catch_3
     move-exception v0
 
     goto/16 :goto_0
 .end method
 
+.method public setTempTimes(I)V
+    .locals 0
+    .param p1, "t"    # I
+
+    .prologue
+    .line 760
+    iput p1, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->times:I
+
+    .line 761
+    return-void
+.end method
+
 .method public stopThread()V
     .locals 1
 
     .prologue
-    .line 668
+    .line 764
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isStart:Z
 
-    .line 669
+    .line 765
     invoke-virtual {p0}, Lzj/zfenlly/gua/FloatWinService$ClickThread;->isAlive()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 670
+    .line 766
     invoke-virtual {p0}, Lzj/zfenlly/gua/FloatWinService$ClickThread;->interrupt()V
 
-    .line 672
+    .line 768
     :cond_0
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class Lzj/zfenlly/gua/FloatWinService$13;
+.class Lzj/zfenlly/gua/FloatWinService$16;
 .super Ljava/lang/Object;
 .source "FloatWinService.java"
 
@@ -27,8 +27,8 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 475
-    iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
+    .line 513
+    iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$16;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,15 +42,15 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 478
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
+    .line 516
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$16;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setTimeBefore1Hour()V
+    invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setTimeAfter10Minites()V
 
-    .line 479
-    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
+    .line 517
+    iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$16;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
-    const-string v1, "-1 hour"
+    const-string v1, "+10m"
 
     const/4 v2, 0x0
 
@@ -60,6 +60,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 480
+    .line 518
     return-void
 .end method
