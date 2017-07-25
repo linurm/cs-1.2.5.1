@@ -11,17 +11,26 @@
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/widget/LinearLayout;Landroid/view/WindowManager;Landroid/view/WindowManager$LayoutParams;)V
-    .locals 0
+    .locals 1
     .param p1, "context"    # Landroid/content/Context;
     .param p2, "mLinearLayout"    # Landroid/widget/LinearLayout;
     .param p3, "mWindowManager"    # Landroid/view/WindowManager;
     .param p4, "wmParams"    # Landroid/view/WindowManager$LayoutParams;
 
     .prologue
-    .line 17
+    .line 16
     invoke-direct {p0, p1, p2, p3, p4}, Lzj/zfenlly/gua/FloatView;-><init>(Landroid/content/Context;Landroid/widget/LinearLayout;Landroid/view/WindowManager;Landroid/view/WindowManager$LayoutParams;)V
 
-    .line 18
+    .line 13
+    const/16 v0, 0x550
+
+    iput v0, p0, Lzj/zfenlly/gua/MZFloatView;->x1:I
+
+    const/16 v0, 0x3e4
+
+    iput v0, p0, Lzj/zfenlly/gua/MZFloatView;->y1:I
+
+    .line 17
     return-void
 .end method
 
@@ -31,7 +40,7 @@
     .locals 4
 
     .prologue
-    .line 22
+    .line 21
     sget v1, Lzj/zfenlly/gua/MZFloatView;->i:I
 
     add-int/lit8 v2, v1, 0x1
@@ -42,7 +51,7 @@
 
     if-le v1, v2, :cond_0
 
-    .line 25
+    .line 24
     iget-object v1, p0, Lzj/zfenlly/gua/MZFloatView;->windowManagerParams:Landroid/view/WindowManager$LayoutParams;
 
     iget v2, p0, Lzj/zfenlly/gua/MZFloatView;->x:F
@@ -55,7 +64,7 @@
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->x:I
 
-    .line 26
+    .line 25
     iget-object v1, p0, Lzj/zfenlly/gua/MZFloatView;->windowManagerParams:Landroid/view/WindowManager$LayoutParams;
 
     iget v2, p0, Lzj/zfenlly/gua/MZFloatView;->y:F
@@ -68,7 +77,7 @@
 
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->y:I
 
-    .line 27
+    .line 26
     iget-object v1, p0, Lzj/zfenlly/gua/MZFloatView;->windowManager:Landroid/view/WindowManager;
 
     iget-object v2, p0, Lzj/zfenlly/gua/MZFloatView;->mLinearLayout:Landroid/widget/LinearLayout;
@@ -77,16 +86,16 @@
 
     invoke-interface {v1, v2, v3}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 29
+    .line 28
     const/4 v1, 0x2
 
     new-array v0, v1, [I
 
-    .line 30
+    .line 29
     .local v0, "anchorPos":[I
     invoke-virtual {p0, v0}, Lzj/zfenlly/gua/MZFloatView;->getLocationOnScreen([I)V
 
-    .line 32
+    .line 31
     const/4 v1, 0x0
 
     aget v1, v0, v1
@@ -107,7 +116,7 @@
 
     iput v1, p0, Lzj/zfenlly/gua/MZFloatView;->x1:I
 
-    .line 33
+    .line 32
     const/4 v1, 0x1
 
     aget v1, v0, v1
@@ -128,7 +137,7 @@
 
     iput v1, p0, Lzj/zfenlly/gua/MZFloatView;->y1:I
 
-    .line 35
+    .line 34
     .end local v0    # "anchorPos":[I
     :cond_0
     return-void

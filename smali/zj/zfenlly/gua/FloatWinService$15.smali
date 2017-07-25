@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 500
+    .line 513
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$15;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +42,12 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 503
+    .line 516
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$15;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setTimeBefore10Minites()V
 
-    .line 504
+    .line 517
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$15;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     const-string v1, "-10m"
@@ -60,6 +60,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 505
+    .line 518
     return-void
 .end method

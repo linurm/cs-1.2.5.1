@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 475
+    .line 488
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,12 +42,12 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 478
+    .line 491
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-virtual {v0}, Lzj/zfenlly/gua/FloatWinService;->setTimeBefore1Hour()V
 
-    .line 479
+    .line 492
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$13;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     const-string v1, "-1 hour"
@@ -60,6 +60,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 480
+    .line 493
     return-void
 .end method

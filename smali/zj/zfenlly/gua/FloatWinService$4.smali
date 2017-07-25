@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 328
+    .line 330
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,33 +42,33 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 331
+    .line 333
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "android.settings.DATE_SETTINGS"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 332
+    .line 334
     .local v0, "intent":Landroid/content/Intent;
     const/high16 v1, 0x10000000
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 333
+    .line 335
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     iget-object v1, v1, Lzj/zfenlly/gua/FloatWinService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 335
+    .line 337
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->delExpandView()V
     invoke-static {v1}, Lzj/zfenlly/gua/FloatWinService;->access$400(Lzj/zfenlly/gua/FloatWinService;)V
 
-    .line 336
+    .line 338
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->settings_flag:Z
@@ -78,13 +78,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 337
+    .line 339
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->delSettingsView()V
     invoke-static {v1}, Lzj/zfenlly/gua/FloatWinService;->access$600(Lzj/zfenlly/gua/FloatWinService;)V
 
-    .line 338
+    .line 340
     :cond_0
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
@@ -95,7 +95,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 339
+    .line 341
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     const-string v2, "[ - ]"
@@ -108,13 +108,13 @@
 
     invoke-virtual {v1}, Landroid/widget/Toast;->show()V
 
-    .line 340
+    .line 342
     iget-object v1, p0, Lzj/zfenlly/gua/FloatWinService$4;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->delCView()V
     invoke-static {v1}, Lzj/zfenlly/gua/FloatWinService;->access$800(Lzj/zfenlly/gua/FloatWinService;)V
 
-    .line 342
+    .line 344
     :cond_1
     return-void
 .end method

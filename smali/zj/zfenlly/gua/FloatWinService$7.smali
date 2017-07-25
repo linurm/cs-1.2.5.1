@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 377
+    .line 390
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +44,7 @@
     .prologue
     const/4 v2, 0x0
 
-    .line 381
+    .line 394
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->add_flag:Z
@@ -54,7 +54,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 382
+    .line 395
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     const-string v1, "[ - ]"
@@ -65,17 +65,17 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 383
+    .line 396
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->delCView()V
     invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$800(Lzj/zfenlly/gua/FloatWinService;)V
 
-    .line 388
+    .line 401
     :goto_0
     return-void
 
-    .line 385
+    .line 398
     :cond_0
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
@@ -87,7 +87,7 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 386
+    .line 399
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$7;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->addCView()V

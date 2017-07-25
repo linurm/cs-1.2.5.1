@@ -27,7 +27,7 @@
     .param p1, "this$0"    # Lzj/zfenlly/gua/FloatWinService;
 
     .prologue
-    .line 349
+    .line 351
     iput-object p1, p0, Lzj/zfenlly/gua/FloatWinService$5;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +42,7 @@
     .param p1, "view"    # Landroid/view/View;
 
     .prologue
-    .line 352
+    .line 354
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$5;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # getter for: Lzj/zfenlly/gua/FloatWinService;->settings_flag:Z
@@ -52,17 +52,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 353
+    .line 355
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$5;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
     # invokes: Lzj/zfenlly/gua/FloatWinService;->delSettingsView()V
     invoke-static {v0}, Lzj/zfenlly/gua/FloatWinService;->access$600(Lzj/zfenlly/gua/FloatWinService;)V
 
-    .line 357
+    .line 359
     :goto_0
     return-void
 
-    .line 355
+    .line 357
     :cond_0
     iget-object v0, p0, Lzj/zfenlly/gua/FloatWinService$5;->this$0:Lzj/zfenlly/gua/FloatWinService;
 
